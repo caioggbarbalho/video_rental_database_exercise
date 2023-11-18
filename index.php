@@ -6,6 +6,9 @@
   <title>Seleção Especial de Filmes</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+
 </head>
 
 <body>
@@ -15,5 +18,9 @@
   <?php
     include ('data-processing.php');
   ?>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="slick-1.8.1/slick/slick.min.js"></script>
+
 </body>
 </html>

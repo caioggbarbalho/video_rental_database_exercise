@@ -8,32 +8,17 @@ if (!$query) {
   die('Query Inválida: ' . @mysqli_error($connection));  
 }
 
-echo "<table border='1px'>";
-echo "<tr><th width='30px' align='center'>Id</th>
-      <th width='100px'>Título</th>
-      <th width='100px'>Gênero</th>
-      <th width='400px'>Sinopse</th>
-      <th width='100px'>Diretor</th>
-      <th width='100px'>Data</th>
-      <th width='100px'>Nota</th>
-      <th width='200px'>Poster</th>
-      </tr>";
+echo "<div class='card-slider'>";
 
-while($data=mysqli_fetch_array($query)) {
-  echo "<tr>";
-  echo "<td align='center'>". $data['id']."</td>";
-  echo "<td>". $data['nome']."</td>";
-  echo "<td>". $data['genero']."</td>";
-  echo "<td>". $data['sinopse']."</td>";
-  echo "<td>". $data['diretor']."</td>";
-  echo "<td>". $data['data']."</td>";
-  echo "<td>". $data['nota']."</td>";		
-  // buscando na pasta imagem
-  echo "<td> <img src='img/".$data['imagem']."'></td>";
-  echo "</tr>";
+while ($data = mysqli_fetch_array($query)) {
+    echo "<div class='card' data-id='" . $data['id'] . "' data-nome='" . $data['nome'] . "' data-genero='" . $data['genero'] . "' data-sinopse='" . $data['sinopse'] . "' data-diretor='" . $data['diretor'] . "' data-data='" . $data['data'] . "' data-nota='" . $data['nota'] . "' data-imagem='" . $data['imagem'] . "'>";
+    echo "<img src='img/" . $data['imagem'] . "' alt='Movie Poster'>";
+    echo "<h2>" . $data['nome'] . "</h2>";
+    echo "<p>" . $data['sinopse'] . "</p>";
+    echo "</div>";
 }
 
-echo "</table>";
-	
-	mysqli_close($connection);
+echo "</div>";
+
+mysqli_close($connection);
 ?>
