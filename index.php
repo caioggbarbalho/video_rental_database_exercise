@@ -19,8 +19,22 @@
     include ('data-processing.php');
   ?>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="slick-1.8.1/slick/slick.min.js"></script>
+  <div class="your-slider-class"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+  <script>
+      // Initialize the Slick slider
+      $(document).ready(function(){
+          $('.card-slider').slick({
+              slidesToShow: 3, // Number of cards to show
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000, // Autoplay speed in milliseconds
+          });
+      });
+  </script>
 
 </body>
 </html>
