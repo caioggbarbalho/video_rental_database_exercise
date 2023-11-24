@@ -1,4 +1,22 @@
 img {
-  max-height: 500px;
+  max-height: 300px;
   width: auto;
+}
+
+body {
+  background: rgb(223, 18, 18);
+}
+
+h1 {
+  color: white;
+  font-size: 12px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 18px;
+  background: white;
+  color: rgb(83, 24, 24);
+
+  margin: 23px;
 }
