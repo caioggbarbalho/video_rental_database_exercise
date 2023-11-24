@@ -130,7 +130,7 @@
   <div class='logo'><img src='img/neon_logo.png'></div>
 
   <div class="intro">
-  <p>"É o ano de 20XX e um dia chega ao fim em Purple City. Conforme o fevor diurno dá lugar à agitação noturna, você refaz o caminho para casa exausto do trabalho.</p>
+  <p>"É o ano de 20XX e mais um dia chega ao fim em Purple City. Conforme o fevor diurno dá lugar à agitação noturna, você refaz o caminho para casa exausto do trabalho.</p>
   <p>Você decide parar na sua habitual locadora de vídeos e descobre que chegou uma nova coleção de filmes do início do século. São verdadeiras relíquias para falar a verdade.</p>
   <p>Qual você alugará?"</p>
   </div>
